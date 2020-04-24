@@ -4,11 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
+    <script src="{{asset('js/app.js')}}"></script>
     <title>{{config('app.name', 'Blog')}}</title>
   </head>
   <body>
       @include('inc.navbar')
       <div class="container">
+        @include('inc.messages')
         @yield('content')
       </div>
   </body>
